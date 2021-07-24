@@ -1,0 +1,21 @@
+server:
+  port: 10103
+
+spring:
+  application:
+    name: eureka-server-10103
+
+eureka:
+  instance:
+    hostname: eureka-server-10103
+  server:
+    enable-self-preservation: true
+  client:
+    #表示是否将自己注册进EurekaServer, 默认为true。
+    fetch-registry: false
+    #表示自己端就是注册中心，职责就是维护服务实例，并不需要去检索服务
+    register-with-eureka: false
+    #集群指向其它eureka, 单机指向自己
+    service-url:
+      defaultZone: http://eureka10101.com:10101/eureka/,http://eureka10102.com:10102/eureka/
+
