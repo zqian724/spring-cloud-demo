@@ -3,13 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-cloud-demo</artifactId>
+        <artifactId>spring-cloud-service-discovery</artifactId>
         <groupId>com.zhengyouyuan.demo</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka-server-10103</artifactId>
+    <artifactId>eureka-server-10101</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -17,16 +18,16 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             <exclusions>
                 <exclusion>
-                    <artifactId>spring-cloud-starter-netflix-archaius</artifactId>
                     <groupId>org.springframework.cloud</groupId>
-                </exclusion>
-                <exclusion>
                     <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-                    <groupId>org.springframework.cloud</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>ribbon-eureka</artifactId>
-                    <groupId>com.netflix.ribbon</groupId>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-netflix-archaius</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-netflix-archaius</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
