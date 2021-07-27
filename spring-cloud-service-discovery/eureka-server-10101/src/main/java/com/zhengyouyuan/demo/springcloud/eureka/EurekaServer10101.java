@@ -1,4 +1,4 @@
-package com.zhengyouyuan.demo.eureka;
+package com.zhengyouyuan.demo.springcloud.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
