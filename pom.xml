@@ -30,6 +30,7 @@
     <shiroVersion>1.7.0</shiroVersion>
     <mysqlConnectorVersion>8.0.19</mysqlConnectorVersion>
     <gsonVersion>2.6</gsonVersion>
+    <slf4jVersion>1.7.30</slf4jVersion>
   </properties>
 
   <dependencyManagement>
@@ -309,25 +310,29 @@
         <version>0.1.4</version>
       </dependency>
       <dependency>
+        <groupId>org.bgee.log4jdbc-log4j2</groupId>
+        <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
+        <version>1.15</version>
+      </dependency>
+      <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>log4j-over-slf4j</artifactId>
-        <version>1.7.30</version>
+        <version>${slf4jVersion}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
-        <version>1.7.30</version>
-        <scope>runtime</scope>
+        <version>${slf4jVersion}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jul-to-slf4j</artifactId>
-        <version>1.7.30</version>
+        <version>${slf4jVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.bgee.log4jdbc-log4j2</groupId>
-        <artifactId>log4jdbc-log4j2-jdbc4</artifactId>
-        <version>1.15</version>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4jVersion}</version>
       </dependency>
       <!-- log end -->
 
