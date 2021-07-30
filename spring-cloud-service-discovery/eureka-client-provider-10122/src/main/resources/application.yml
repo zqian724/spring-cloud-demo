@@ -1,0 +1,17 @@
+server:
+  port: 10122
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka10101.com:10101/eureka/,http://eureka10102.com:10102/eureka/,http://eureka10103.com:10103/eureka/
+  instance:
+    instance-id: eureka-client-provider-10122
+    #访问路径可以显示IP地址
+    preferIpAddress: true
+
+spring:
+  application:
+    name: eureka-client-provider

@@ -17,7 +17,9 @@
         <module>eureka-server-10102</module>
         <module>eureka-server-10103</module>
 
-        <module>eureka-client-10111</module>
+        <module>eureka-client-consumer-10111</module>
+        <module>eureka-client-provider-10121</module>
+        <module>eureka-client-provider-10122</module>
     </modules>
 
 </project>
