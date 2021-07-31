@@ -20,6 +20,10 @@
         <module>eureka-client-consumer-10111</module>
         <module>eureka-client-provider-10121</module>
         <module>eureka-client-provider-10122</module>
+
+        <module>zookeeper-client-consumer-10211</module>
+        <module>zookeeper-client-provider-10221</module>
+        <module>zookeeper-client-provider-10222</module>
     </modules>
 
 </project>

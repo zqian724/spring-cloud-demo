@@ -1,0 +1,22 @@
+server:
+  port: 10211
+
+spring:
+  application:
+    name: zookeeper-client-consumer
+  cloud:
+    #注册到zookeeper地址
+    zookeeper:
+#      connect-string: 172.17.0.2:2181,172.17.0.3:2181,172.17.0.4:2181
+      connect-string: 45.76.160.204:12181,45.76.160.204:22181,45.76.160.204:32181
+      discovery:
+        enabled: true
+        # 是否启动服务注册
+        register: true
+        # zk唯一id的标识
+        instance-id: zookeeper-client-consumer-10211
+        # zk根节点名称
+        root: /services
+
+
+
