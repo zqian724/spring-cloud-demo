@@ -24,6 +24,10 @@
         <module>zookeeper-client-consumer-10211</module>
         <module>zookeeper-client-provider-10221</module>
         <module>zookeeper-client-provider-10222</module>
+
+        <module>consul-client-consumer-10311</module>
+        <module>consul-client-provider-10321</module>
+        <module>consul-client-provider-10322</module>
     </modules>
 
 </project>

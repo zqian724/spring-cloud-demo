@@ -1,0 +1,17 @@
+server:
+  port: 10322
+
+spring:
+  application:
+    name: consul-client-consumer
+
+  cloud:
+    consul:
+      port: 8500
+      host: localhost
+      discovery:
+        register: true
+        service-name: consul-client-provider
+        instance-id:  consul-client-provider-10322
+        heartbeat:
+          enabled: true
