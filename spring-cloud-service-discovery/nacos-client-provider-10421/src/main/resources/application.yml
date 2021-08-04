@@ -1,0 +1,10 @@
+server:
+  port: 10421
+
+spring:
+  application:
+    name: nacos-client-provider
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+

@@ -28,6 +28,9 @@
         <module>consul-client-consumer-10311</module>
         <module>consul-client-provider-10321</module>
         <module>consul-client-provider-10322</module>
+        <module>nacos-client-consumer-10411</module>
+        <module>nacos-client-provider-10421</module>
+        <module>nacos-client-provider-10422</module>
     </modules>
 
 </project>
