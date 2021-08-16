@@ -1,0 +1,33 @@
+server:
+  port: 20101
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka10101.com:10101/eureka/,http://eureka10102.com:10102/eureka/,http://eureka10103.com:10103/eureka/
+
+spring:
+  application:
+    name: config-server-eureka
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        # 本地配置
+        native:
+          searchLocations: file:E:/Code/Java/spring-cloud-demo/config-repo/config-server-application-20111
+#        # git配置
+#        git:
+#          uri: ""
+#          search-paths: ""
+#          username: ""
+#          password: ""
+#          basedir: ""
+#        # svn配置
+#        svn:
+#          basedir:
+#          uri:
+#          search-paths:
+#          username:
+#          password:
