@@ -5,6 +5,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka10101.com:10101/eureka/,http://eureka10102.com:10102/eureka/,http://eureka10103.com:10103/eureka/
+  instance:
+    instance-id: config-server-eureka-20101
 
 spring:
   application:

@@ -1,0 +1,16 @@
+server:
+  port: 20111
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka10101.com:10101/eureka/,http://eureka10102.com:10102/eureka/,http://eureka10103.com:10103/eureka/
+  instance:
+    instance-id: config-server-application-20111
+    preferIpAddress: true
+
+spring:
+  application:
+    name: config-server-application
+
+appName: ConfigServerApplication20111
