@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: nacos-config-application
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.11:8848 #Nacos服务注册中心地址
+        group: spring-cloud-demo
+        namespace: 827503f8-986b-4fcc-97a0-c478ac4070eb
+      config:
+        server-addr: 192.168.3.11:8848 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+        group: spring-cloud-demo
+        namespace: 827503f8-986b-4fcc-97a0-c478ac4070eb
+        username: nacos
+        password: nacos

@@ -14,6 +14,7 @@
     <modules>
         <module>config-server-eureka-20101</module>
         <module>config-server-application-20111</module>
+        <module>nacos-application-20211</module>
     </modules>
 
 
